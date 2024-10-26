@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Wheel</title>
+    <link rel="stylesheet" href="spin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <h1>Let's have some fun!!</h1>
+    <div class="wheel-container">
+        <div class="wheel" id="wheel">
+            <!-- Wheel segments can be added here -->
+            <div></div> 
+            <div></div> 
+            <div></div>    
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="pointer"></div>
+        <div class="circle-pointer"><p class="name">spin</p></div>
+
+    </div>
+
+    <button class="spin-btn" id="spinButton">Spin me</button>
+    
+    <button class="home-btn" id="homeButton" onclick="location.href='selectionpage.html'">Go to home</button>
+
+
+    <!-- Popup Structure -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+        <h2>YOUR TASK IS...</h2>
+        <p id="popupTask"></p> 
+    </div>
+</div>
+
+    <script src="spin.js"></script>
+</body>
+</html>

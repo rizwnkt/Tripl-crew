@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(135deg, #94f0ac, #1cb5e0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Stack children vertically */
+}
+a {
+  text-decoration: none !important;
+}
+
+/* Heading for the question */
+#second-heading {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: bolder;
+  animation: fadeInUp 1s ease; /* Animation for fade-in and upward motion */
+  margin-bottom: 20px; /* Space below the first heading */
+}
+
+/* Second heading with animation */
+h2 {
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  animation: fadeInUp 1.2s ease; /* Slightly delayed animation */
+  margin-bottom: 10px; /* Space below the second heading */
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;                 
+  justify-content: flex-start;       /* Center buttons horizontally */
+  align-items: center;           /* Center items vertically */
+  flex-direction: column;        /* Stack buttons vertically */
+  height: 100%;                  /* Take full height of the container */
+  gap: 20px;   
+                   /* Space between buttons */
+}
+
+/* Start button styling */
+.start-button {
+  background-color: #28a745;    
+  color: black;                 
+  border: none;                 
+  border-radius: 50px;         
+  padding: 15px 30px;          /* Increased padding */
+  font-size: 20px;              
+  cursor: pointer;              
+  transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+  animation: bounceIn 1s ease; /* Bounce-in animation */
+  margin-top: 10px; /* Space above the start button */
+}
+
+.start-button:hover {
+  background-color: #218838;    
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Second start button styling */
+.start-button1 {
+  background-color: #28a745;    
+  color: black;                 
+  border: none;                 
+  border-radius: 50px;         
+  padding: 15px 30px;          /* Increased padding */
+  font-size: 20px;              
+  cursor: pointer;              
+  transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+  margin: 0 10px;               /* Space between buttons */
+  animation: bounceIn 1s ease; /* Bounce-in animation */
+  margin-top: 10px; /* Space above the second button */
+}
+
+.start-button1:hover {
+  background-color: #218838;    
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Options container */
+#options-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}

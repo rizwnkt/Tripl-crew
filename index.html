@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quirk</title>
+</head>
+
+<body>
+    <section>
+        <!-- Title as a logo with inline CSS, positioned at top-left -->
+        <h1 style="
+            font-family: 'Audiowide', sans-serif; 
+            font-size: 2em; /* Adjusted font size */
+            color: #373231; 
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            animation: pulse 1.5s infinite;
+        ">
+            Quirk
+        </h1>
+       
+        <h2 id="second-heading">Are you bored?</h2>
+        <h2> Dive in for absurd questions, useless games, <br>
+            and endless entertainment. Because who needs productivity anyway?</h2>
+        <div class="button-container">
+            <a href="selectionpage.html" class="start-button">Start now</a>
+        </div>
+    </section>
+
+    <style>
+        /* Define the keyframes for the pulse animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</body>
+
+</html>
